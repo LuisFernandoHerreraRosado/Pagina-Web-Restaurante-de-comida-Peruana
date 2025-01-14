@@ -1,0 +1,494 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-padding-top: 80px; /* Ajusta según la altura de tu header */
+}
+/*esta sección es del encabezado*/
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(202, 7, 7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+    position: fixed;
+    z-index: 1;
+    top:0;
+}
+.logo{
+    width: 85px;
+
+
+}
+.logo img{
+    width: 80px;
+    height: auto;
+    border-radius: 30px;
+}
+.bars{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color:white;
+    font-size: 18px;
+    padding: 10px 28px;
+    border-radius: 15px ;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+.nav-bar .sub-menu{
+    position: absolute;
+    display: none;
+    color:white;
+    font-size: 18px;
+    padding: 10px 28px;
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    z-index: 1;
+
+}
+.nav-bar ul li a:hover{
+    transform: scale(1.1);
+    color: #FFE900;
+}
+.nav-bar li:hover .sub-menu{
+    display: block;
+    background-color: black;
+
+}
+
+.nav-bar ul li .sub-menu a:hover{
+    color: #FFE900;
+    background-color: #520000;
+    cursor: pointer;
+    border-radius: 0;
+    transform: translateX(11px);
+}
+.nav-bar ul li a.active{
+    color: white;
+    background-color: #520000;
+}
+/*esta sección es del bloque 1*/
+.bloque-1{
+    margin-top: 80px;
+    height: 875px;
+    width: 100%;
+    display:flex;
+}
+/*esta sección es de la barra de la izquierda de la primera parte*/
+.barra-1{
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: #FFE900;
+    color: rgb(5, 5, 5);
+    padding: 105px 25px 25px 25px;
+
+}
+.barra-1 img{
+    height: 300px;
+}
+.parrafo-letra-1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Puedes cambiar este valor entre 400 y 700 */
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 35px;
+    }
+/* LA PARTE DEL CHEF */
+.section-1{
+    display: 1;
+    height: auto;
+    float:  right;
+    overflow: hidden;
+}
+.section-1-1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(43, 150, 238) 100%);
+
+}
+.section-1-1-1{
+    display: flex;
+    height: 100%;
+    width: 70%;
+    align-items: center;
+}
+.parrafo-letra-2 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 150px;
+    font-size: 28px;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 4.2s ease forwards;
+}
+/* Definir la animación para que el párrafo aparezca gradualmente */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Invisible */
+    }
+    100% {
+        opacity: 1; /* Completamente visible */
+    }
+}
+.section-1-1-2{
+    height: 100%;
+    width: 30%;
+}
+.section-1-1-2 img{
+    width: auto;
+    height: 370px;
+    padding-right: 140px;
+    float: right;
+    transform: translateX(100vw);
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+/* animación chef */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100vw); /* Comienza fuera de la pantalla */
+        opacity: 0; /* Invisible */
+    }
+    100% {
+        transform: translateX(0); /* Llega a su posición original */
+        opacity: 1; /* Se vuelve visible */
+    }
+}
+/*BARRA DE IMÁGENES*/
+.slider-container{
+    height: 50%;
+    width: 100%;
+
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-top: black solid 10px;}
+.slider {
+    display: flex; /* Ajusta el ancho para que todas las imágenes quepan */
+    animation: slide 15s linear infinite; /* Aplica la animación de 20 segundos, repetida infinitamente */
+}
+  /* Estilos para cada imagen */
+.slide {
+    width: 470px;
+    height: 500px;
+    object-fit: cover;
+}
+/* Animación de desplazamiento continuo */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Inicia en la posición inicial */
+    }
+    50% {
+        transform: translateX(-100%); /* Desplaza todo hacia la izquierda */
+    }
+    100% {
+        transform: translateX(0); /* Regresa a la posición inicial */
+    }
+}
+.bloque-2{
+    height: 875px;
+    width: 100%;
+    display:flex;
+    background-image: url("imagenes/fondo\ bloque\ 2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: black solid 10px;
+}
+.comida{
+    background-color: transparent;
+    width: 50%;
+    height: auto;
+    padding: 40px;
+}
+.comida ul{
+    margin: 0;
+    padding: 0;
+}
+.comida li{
+    display: flex;
+    margin: 15px 0 0 70px;
+    padding: 0;
+    background-color: #1B76B3;
+    width: 720px;
+    border-radius: 20px;
+}
+.comida img{
+    display: block;
+    min-width: 150px;
+    min-height: 120px;
+    max-width: 150px;
+    max-height: 120px;
+    object-fit: cover;
+    margin: 0 0 0 30px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+.comida img:hover{
+    transform: scale(1.5);
+}
+.comida h1{
+    color: #F8E711;
+    background-color:#1B76B3;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+}
+.comida h2{
+width: 300px;
+padding: 15px 0 0 15px;
+color: #FFE900;
+
+}
+.comida p{
+    padding: 15px 30px 15px 10px;
+    width: 300px;
+    color: white;
+    text-align: center;
+}
+.bloque-3{
+    height: 875px;
+    width: 100%;
+    display:flex;
+    background: radial-gradient(circle,  #d3d0ab, #55c9f7);
+    border-top: black solid 10px;
+}
+/* chancamos los colores de fondo de los li y h1 */
+.comida-2 li{
+    background-color: #254da3;
+}
+.comida-2 h1{
+    background-color: #254da3;
+}
+.comida-3 li{
+    background-color: #CA0707;
+}
+.comida-3 h1{
+    background-color: #CA0707;
+}
+.comida-4 li{
+    background-color: #0fb165;
+}
+.comida-4 h1{
+    background-color: #0fb165;
+}
+.footer{
+    height: 900px;
+    width: 100%;
+    display:flex;
+    background-color:#FFE900;
+
+}
+.seccion-footer{
+    width: 33.33%;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.seccion-footer img{
+    width: 400px;
+    height:  400px;
+}
+.redes-sociales{
+    justify-content: center;
+    align-items:end;
+    color: #EF4A15;
+    margin-left: 20px;
+}
+.redes-sociales img{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.form-reserva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 33.33%;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-reserva h1 {
+    text-align: center;
+    color: #d9534f;
+}
+.form-reserva label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-reserva input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-reserva button {
+    width: 100%;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-reserva button:hover {
+    background-color: #c9302c;
+}
+.mapa{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mapa h4{
+    margin: 0 0 30px 0;
+}
+@media(max-width:768px){
+    header{
+        padding: 0 30px;
+    }
+    .bars{
+        display:block;
+        cursor: pointer;
+    }
+    .bars .line{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0px;
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color:#B41524;
+        transition: 0.5s;
+        overflow:hidden;
+    }
+    .nav-bar.active{
+        height: 450px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: opacity 0.4s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 20px;
+    }
+    .nav-bar .sub-menu{
+        position: absolute;
+        display: none;
+        margin: 0;
+
+        margin-left: 200px;
+        margin-top: -60px;
+        padding-left: 10px;
+        width: max-content;
+    }
+
+    .bloque-1{
+    flex-direction: column;
+    }
+    .barra-1{
+    width: 100%;
+    }
+    .barra-1 img{
+        height: 300px;
+        margin-left: 5%;
+    }
+    .section-1-1{
+        display: none;
+    }
+    .slider-container{
+    height: 100%;
+    width: 500%;
+    }
+    .slider {
+        display: flex; /* Ajusta el ancho para que todas las imágenes quepan */
+        animation: slide 40s linear infinite; /* Aplica la animación de 20 segundos, repetida infinitamente */
+    }
+    .barra-1 img{
+        margin-left: 15%;
+    }
+    .bloque-2{
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+    .bloque-3{
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+    .comida{
+        width: 100%;
+        height: auto;
+    }
+    .comida li{
+        display: flex;
+        flex-direction: column;
+        width: auto;;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0 0 0;
+    }
+    .footer{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    seccion-footer{
+        width: 100%;
+    }
+    .redes-sociales{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-reserva{
+        width: 100%;
+    }
+    .mapa{
+        margin-bottom: 30px;
+    }
+}

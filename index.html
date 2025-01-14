@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barra de Navegación</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="imagenes/logo.png" alt="" /></div>
+      <div class="bars">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="#bloque-1" class="active">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#bloque-2">Platos</a>
+            <ul class="sub-menu">
+              <li><a href="#entradas">Entradas</a></li>
+              <li><a href="#platos">Platos Principales</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#bloque-3">Postres y bebidas</a>
+            <ul class="sub-menu">
+              <li><a href="#postres">Postres</a></li>
+              <li><a href="#bebidas">Bebidas</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="bloque-1" id="bloque-1">
+      <aside class="barra-1">
+        <img src="imagenes/logo.png" alt="" />
+        <p class="parrafo-letra-1">
+          ¿Estás listo para una explosión de sabores? En Peruvian food te
+          ofrecemos una propuesta gastronómica divertida y desenfadada. Desde
+          los platos más populares hasta creaciones originales, nuestra carta
+          tiene algo para todos los gustos. ¡Ven con amigos y familia a
+          disfrutar de la mejor comida peruana en un ambiente relajado!"
+        </p>
+      </aside>
+      <section class="section-1">
+        <div class="section-1-1">
+          <div class="section-1-1-1">
+            <p class="parrafo-letra-2">
+              ¿Antojo de Perú? 🇵🇪 ¡Visítanos y descubre los sabores más
+              auténticos! Ceviche fresco, lomo saltado y mucho más. ¡Te
+              esperamos! #comidaperuana #PeruvianFood
+            </p>
+          </div>
+          <div class="section-1-1-2">
+            <img src="imagenes/chef.png" alt="" />
+          </div>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <img
+              src="imagenes/arroz chaufa.avif"
+              alt="Imagen 5"
+              class="slide"
+            />
+            <img src="imagenes/ceviche.webp" alt="Imagen 1" class="slide" />
+            <img
+              src="imagenes/pollo a la brasa.jpeg"
+              alt="Imagen 2"
+              class="slide"
+            />
+            <img
+              src="imagenes/rocoto relleno.jpg"
+              alt="Imagen 3"
+              class="slide"
+            />
+            <img
+              src="imagenes/aji de gallina.jpg"
+              alt="Imagen 4"
+              class="slide"
+            />
+            <img src="imagenes/arroz con pollo.jpg"Imagen 1" class="slide" />
+            <img
+              src="imagenes/causa rellena.jpeg"
+              alt="Imagen 6"
+              class="slide"
+            />
+            <img src="imagenes/cau cau.jpg" alt="Imagen 7" class="slide" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="bloque-2" id="bloque-2">
+      <div class="comida" id="entradas">
+        <h1>Entradas</h1>
+        <ol>
+          <li>
+            <h2>Ceviche</h2>
+            <p>
+              Pescado fresco marinado en jugo de limón, acompañado de cebolla,
+              ají limo, cilantro y camote.
+            </p>
+            <img src="imagenes/ceviche.webp" alt="" />
+          </li>
+          <li>
+            <h2>Papa a la Huancaina</h2>
+            <p>
+              Rodajas de papa sancochada cubiertas con salsa de queso, ají
+              amarillo, y leche, servidas con huevo cocido y aceitunas.
+            </p>
+            <img src="imagenes/papa a la huancaina.jpeg" />
+          </li>
+          <li>
+            <h2>Ocopa Arequipeña</h2>
+            <p>
+              Papas sancochadas cubiertas con una salsa a base de maní, ají y
+              huacatay, típico de Arequipa.
+            </p>
+            <img src="imagenes/ocopa arequipeña.jpg" alt="" />
+          </li>
+          <li>
+            <h2>Choros a la Chalaca</h2>
+            <p>
+              Mejillones cocidos y servidos con una mezcla de tomate, cebolla,
+              maíz y jugo de limón.
+            </p>
+            <img src="imagenes/choros a la chalaca.webp" alt="" />
+          </li>
+          <li>
+            <h2>Ají de Gallina</h2>
+            <p>
+              Guiso de pollo desmenuzado en una cremosa salsa de ají amarillo,
+              servido con papas sancochadas y arroz blanco.
+            </p>
+            <img src="imagenes/aji de gallina.jpg" alt="" />
+          </li>
+        </ol>
+      </div>
+      <div class="comida comida-2" id="platos">
+        <h1>Platos Principales</h1>
+        <ol>
+          <li>
+            <h2>Lomo Saltado</h2>
+            <p>
+              Tiras de lomo de res salteadas con cebolla, tomate, ají y salsa de
+              soya, servido con papas fritas y arroz.
+            </p>
+            <img src="imagenes/lomo saltado.jpeg" alt="" />
+          </li>
+          <li>
+            <h2>Arroz con Mariscos</h2>
+            <p>
+              Arroz sazonado con especias y mezclado con mariscos frescos como
+              camarones, calamares y pulpo.
+            </p>
+            <img src="imagenes/arros de mariscos.jpeg" alt="" />
+          </li>
+          <li>
+            <h2>Pollo a la Brasa</h2>
+            <p>
+              Pollo asado marinado en una mezcla de especias peruanas,
+              acompañado de papas fritas y ensalada.
+            </p>
+            <img src="imagenes/pollo a la brasa.jpeg" alt="" />
+          </li>
+          <li>
+            <h2>Tacu Tacu con Lomo</h2>
+            <p>
+              Una mezcla de arroz y frejoles refritos, acompañada de lomo
+              saltado o bistec a la plancha.
+            </p>
+            <img src="imagenes/tacu tacu con lomo.jpg" alt="" />
+          </li>
+          <li>
+            <h2>Cau Cau</h2>
+            <p>
+              Estofado de mondongo y papas, sazonado con cúrcuma, ají amarillo y
+              hierbabuena.
+            </p>
+            <img src="imagenes/cau cau.jpg" alt="" />
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="bloque-3" id="bloque-3">
+      <div class="comida comida-3" id="postres">
+        <h1>Postres</h1>
+        <ol>
+          <li>
+            <h2>Suspiro a la Limeña</h2>
+            <p>
+              Un clásico postre limeño a base de manjar blanco y merengue de
+              vino oporto, decorado con canela.
+            </p>
+            <img src="imagenes/suspiro a la limeña.webp" alt="" />
+          </li>
+          <li>
+            <h2>Mazamorra Morada</h2>
+            <p>
+              Postre tradicional a base de maíz morado, frutas secas, y
+              especias. Se sirve caliente o tibio.
+            </p>
+            <img src="imagenes/mazamorra morada.jpeg" />
+          </li>
+          <li>
+            <h2>Arroz con Leche</h2>
+            <p>
+              Delicioso postre hecho con arroz, leche, y azúcar, aromatizado con
+              canela y clavo de olor.
+            </p>
+            <img src="imagenes/arroz con leche.jpeg" alt="" />
+          </li>
+          <li>
+            <h2>Picarones</h2>
+            <p>
+              Dulces anillos fritos hechos a base de camote y zapallo, servidos
+              con miel de chancaca.
+            </p>
+            <img src="imagenes/picarones.avif" alt="" />
+          </li>
+          <li>
+            <h2>Turrón de Doña Pepa</h2>
+            <p>
+              Tradicional turrón limeño, compuesto de capas de masa dulce,
+              bañadas en miel de chancaca y decorado con grageas de colores.
+            </p>
+            <img src="imagenes/turron doña pepa.jpg" alt="" />
+          </li>
+        </ol>
+      </div>
+      <div class="comida comida-4" id="bebidas">
+        <h1>Bebidas</h1>
+        <ol>
+          <li>
+            <h2>Chicha Morada</h2>
+            <p>
+              Refrescante bebida hecha de maíz morado, piña, manzana, canela, y
+              clavo. Servida fría y ligeramente endulzada.
+            </p>
+            <img src="imagenes/chicha morada.jpeg" alt="" />
+          </li>
+          <li>
+            <h2>Pisco Sour</h2>
+            <p>
+              El coctel más representativo de Perú, preparado con pisco, jugo de
+              limón, jarabe de goma, clara de huevo, y un toque de amargo de
+              angostura.
+            </p>
+            <img src="imagenes/psico sour.webp" alt="" />
+          </li>
+          <li>
+            <h2>Inca Kola</h2>
+            <p>
+              Gaseosa peruana de sabor dulce y único, perfecta para acompañar
+              cualquier comida.
+            </p>
+            <img src="imagenes/inka kola.jpeg" alt="" />
+          </li>
+          <li>
+            <h2>Emoliente</h2>
+            <p>
+              Bebida caliente tradicional hecha a base de cebada, hierbas
+              medicinales, linaza, y limón. Ideal para consumir en las mañanas o
+              noches frescas.
+            </p>
+            <img src="imagenes/emoliente.jpg" alt="" />
+          </li>
+          <li>
+            <h2>Agua de Cebada</h2>
+            <p>
+              Refrescante bebida fría hecha con cebada tostada, jugo de limón, y
+              endulzada con miel o azúcar.
+            </p>
+            <img src="imagenes/agua de cebada.jpeg" alt="" />
+          </li>
+        </ol>
+      </div>
+    </div>
+    <footer class="footer" id="contacto">
+      <div class="seccion-footer">
+        <img src="imagenes/logo.png" alt="" />
+        <div class="redes-sociales">
+          <h3>Síguenos en nuestras redes sociales</h3>
+          <a href="#"><img src="imagenes/whatsapp.png" alt="" /></a>
+          <a href="#"><img src="imagenes/facebook.png" alt="" /></a>
+          <a href="#"><img src="imagenes/instagram.png" alt="" /></a>
+          <a href="#"><img src="imagenes/twiter.png" alt="" /></a>
+          <a href="#"><img src="imagenes/youtube.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="form-reserva">
+        <h1>Reserva o Pedido</h1>
+        <form action="/enviar_reserva" method="post">
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required />
+
+          <label for="fecha">Fecha de la Reserva:</label>
+          <input type="date" id="fecha" name="fecha" required />
+
+          <label for="hora">Hora de la Reserva:</label>
+          <input type="time" id="hora" name="hora" required />
+
+          <label for="personas">Número de Personas:</label>
+          <select id="personas" name="personas" required>
+            <option value="1">1 Persona</option>
+            <option value="2">2 Personas</option>
+            <option value="3">3 Personas</option>
+            <option value="4">4 Personas</option>
+            <option value="5">5 Personas</option>
+            <option value="6">6 Personas</option>
+            <option value="7">7 Personas</option>
+            <option value="8">8 o más Personas</option>
+          </select>
+
+          <label for="mensaje">Mensaje Adicional (Opcional):</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            placeholder="Deja un mensaje o especifica tu pedido si lo deseas..."
+          ></textarea>
+          <button type="submit">Enviar Reserva</button>
+        </form>
+      </div>
+      <div class="mapa">
+        <h4>Ubicanos en C.Puente Grau 314</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d478.4515267692507!2d-71.5371339395643!3d-16.39370495871672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b23ace9bf51%3A0x274c902b6243b577!2sRestaurante!5e0!3m2!1ses-419!2spe!4v1729294422257!5m2!1ses-419!2spe"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
