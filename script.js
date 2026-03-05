@@ -29,3 +29,12 @@ showSlide(currentSlide);
 
 // Configura el intervalo de tiempo (por ejemplo, cada 3 segundos)
 setInterval(autoSlide, 3000);
+
+window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
