@@ -340,6 +340,21 @@ color: #FFE900;
     width: 60px;
     height: 60px;
     margin: 10px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.redes-sociales:hover img {
+    animation: none;
+}
+
+.redes-sociales img:hover {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
 }
 
 .form-reserva{
