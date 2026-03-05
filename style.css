@@ -367,6 +367,15 @@ color: #FFE900;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    transition: background-color 1.5s ease;
+}
+
+.form-reserva input:focus,
+.form-reserva select:focus,
+.form-reserva textarea:focus {
+    background-color: #ffe0b2; /* Naranja claro */
+    outline: none;
+    border-color: #ff9800;
 }
 .form-reserva button {
     width: 100%;
